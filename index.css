@@ -1,0 +1,42 @@
+.stars
+{
+    display: flex;
+    padding: 0;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: baseline;
+}
+.stars li{
+    list-style-type: none;
+}
+
+.stars li{
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-size: 8rem;
+    color: grey;
+}
+
+.stars:hover li{
+    color:yellow;
+}
+.stars li:hover
+{
+    color:yellow;
+}
+
+.stars li:hover ~ li
+{
+    color:grey;
+}
+
+.stars li.active
+{
+    color: yellow;
+}
+
+.stars.disabled
+{
+    pointer-events: none;
+}
